@@ -114,7 +114,7 @@ public class FlutterSharePlugin implements MethodCallHandler {
 
             File file = new File(filePath);
 
-            Uri fileUri = FileProvider.getUriForFile(mRegistrar.context(), mRegistrar.context().getApplicationContext().getPackageName() + ".provider", file);
+            Uri fileUri = FileProvider.getUriForFile(mRegistrar.context(), mRegistrar.context().getApplicationContext().getPackageName() + ".fileProvider", file);
 
             Intent intent = new Intent();
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
